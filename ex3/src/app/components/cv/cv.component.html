@@ -1,0 +1,18 @@
+<div class="cv-container">
+  <div class="layout-horizontal">
+    <div class="list-column">
+      <h3>Liste des CVs</h3>
+      <app-liste 
+        [persons]="persons" 
+        (personSelected)="selectPerson($event)">
+      </app-liste>
+    </div>
+    
+    <div class="detail-column">
+      <h3 *ngIf="selectedPerson">Détails du CV</h3>
+      <app-detail 
+        [person]="selectedPerson">
+      </app-detail>
+    </div>
+  </div>
+</div>

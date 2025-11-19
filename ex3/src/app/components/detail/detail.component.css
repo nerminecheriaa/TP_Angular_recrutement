@@ -1,0 +1,72 @@
+.detail-container {
+  height: 100%;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.card-header {
+  padding: 15px 20px;
+  border-bottom: none;
+}
+
+.detail-avatar {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: 4px solid #f8f9fa;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.person-info {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.info-item {
+  padding: 8px 0;
+  border-bottom: 1px solid #e9ecef;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-item:last-child {
+  border-bottom: none;
+}
+
+.color-badge {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-left: 10px;
+  border: 2px solid #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+.no-selection {
+  background: #f8f9fa;
+  padding: 60px 20px;
+  border-radius: 12px;
+  border: 2px dashed #dee2e6;
+}
+
+.placeholder-icon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  opacity: 0.5;
+}
+
+.blockquote {
+  border-left: 4px solid #3498db;
+  padding-left: 15px;
+  font-style: italic;
+  color: #555;
+}

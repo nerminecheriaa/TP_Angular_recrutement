@@ -1,0 +1,37 @@
+<div class="detail-container">
+  <div *ngIf="person; else empty">
+    <div class="card">
+      <div class="card-header" style="background: #3498db;">
+        <h5 class="text-white mb-0">Détails du CV</h5>
+      </div>
+      
+      <div class="card-body">
+        <div class="text-center mb-4">
+          <img 
+            [src]="'assets/img/' + person.path" 
+            [alt]="person.firstName + ' ' + person.name"
+            class="detail-avatar rounded-circle mb-3"
+            onerror="this.src='assets/img/profile.png'">
+          
+          <h3 class="card-title">{{ person.firstName }} {{ person.name }}</h3>
+          <h5 class="text-primary">{{ person.job }}</h5>
+        </div>
+
+        <div class="person-info">
+          <div class="info-item">
+            <strong>Âge:</strong> {{ person.age }} ans
+          </div>
+          <div class="info-item">
+            <strong>CIN:</strong> {{ person.cin }}
+          </div>
+        </div>
+
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <ng-template #empty>
+  </ng-template>
+</div>
