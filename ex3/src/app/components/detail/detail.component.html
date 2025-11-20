@@ -5,14 +5,14 @@
          (mouseleave)="resetCard()">
       
       <div class="card" [class.rotated]="isRotated">
-        
+
         <div class="front">
           <div class="card-content">
             <div class="avatar-section">
               <div class="image-circle">
                 <img 
                  [src]="'assets/img/' + person.path" 
-                 [alt]="person.firstName + ' ' + person.name">
+                 >
               </div>
             </div>
             
@@ -36,7 +36,7 @@
               <div class="image-circle">
                 <img 
                 [src]="'assets/img/' + person.path" 
-                [alt]="person.firstName + ' ' + person.name">
+                >
               </div>
             </div>
             

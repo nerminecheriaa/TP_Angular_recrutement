@@ -21,17 +21,17 @@ export class CvComponent implements OnInit {
       22,
       '12345678',
       'student',
-      'profile.png',
+      'profile2.png',
   
     ),
     new Cv(
       2,
+      'melki',
       'mariem',
-      'y',
       28,
       '87654321',
       'Developer',
-      'https://i.pravatar.cc/150?img=2',
+      'profile.png',
     ),
   ];
 
