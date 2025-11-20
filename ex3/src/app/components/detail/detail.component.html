@@ -11,9 +11,8 @@
             <div class="avatar-section">
               <div class="image-circle">
                 <img 
-                  [src]="person.path" 
-                  [alt]="person.firstName + ' ' + person.name"
-                  onerror="this.src='https://i.pravatar.cc/150?img=1'">
+                 [src]="'assets/img/' + person.path" 
+                 [alt]="person.firstName + ' ' + person.name">
               </div>
             </div>
             
@@ -21,10 +20,11 @@
             <p class="job">{{ person.job }}</p>
             
             <div class="age-section">
-              <span class="age">{{ person.age }} years old</span>
+              <span class="age">{{ person.age }} </span>
             </div>
             
             <div class="auto-rotation">
+              <i class="fas fa-sync-alt"></i>
               <span> Auto Rotation</span>
             </div>
           </div>
@@ -35,9 +35,8 @@
             <div class="avatar-section">
               <div class="image-circle">
                 <img 
-                  [src]="person.path" 
-                  [alt]="person.firstName + ' ' + person.name"
-                  onerror="this.src='https://i.pravatar.cc/150?img=1'">
+                [src]="'assets/img/' + person.path" 
+                [alt]="person.firstName + ' ' + person.name">
               </div>
             </div>
             
